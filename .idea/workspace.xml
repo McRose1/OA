@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a4a878-c013-4fd2-a038-5b46c5e1cdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/携程/LRUCache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/携程/bitCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/携程/提取优惠券码.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PureStorage/NumberScores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/携程/查询满足区间的记录.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/携程/查询满足区间的记录.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.提取优惠券码">
+  <component name="RunManager" selected="Application.bitCount">
     <configuration name="查询满足区间的记录" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="携程.查询满足区间的记录" />
       <module name="OA" />
@@ -52,8 +49,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="提取优惠券码" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="携程.提取优惠券码" />
+    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="携程.LRUCache" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +62,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LRUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="携程.LRUCache" />
+    <configuration name="提取优惠券码" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="携程.提取优惠券码" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -93,7 +90,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.提取优惠券码" />
         <item itemvalue="Application.bitCount" />
         <item itemvalue="Application.LRUCache" />
         <item itemvalue="Application.查询满足区间的记录" />
@@ -112,6 +108,7 @@
       <updated>1585666750845</updated>
       <workItem from="1585666752362" duration="4445000" />
       <workItem from="1585691992235" duration="9412000" />
+      <workItem from="1586310040729" duration="1232000" />
     </task>
     <servers />
   </component>
@@ -123,25 +120,25 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="104" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1585692228573" />
-    <state width="1238" height="240" key="GridCell.Tab.0.bottom" timestamp="1585716483727">
+    <state width="1238" height="240" key="GridCell.Tab.0.bottom" timestamp="1586311380744">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="240" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1585716483727" />
+    <state width="1238" height="240" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586311380744" />
     <state width="982" height="246" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136845" />
-    <state width="1238" height="240" key="GridCell.Tab.0.center" timestamp="1585716483727">
+    <state width="1238" height="240" key="GridCell.Tab.0.center" timestamp="1586311380743">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="240" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1585716483727" />
+    <state width="1238" height="240" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586311380743" />
     <state width="982" height="246" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136843" />
-    <state width="1238" height="240" key="GridCell.Tab.0.left" timestamp="1585716483726">
+    <state width="1238" height="240" key="GridCell.Tab.0.left" timestamp="1586311380743">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="240" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1585716483726" />
+    <state width="1238" height="240" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586311380743" />
     <state width="982" height="246" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136842" />
-    <state width="1238" height="240" key="GridCell.Tab.0.right" timestamp="1585716483727">
+    <state width="1238" height="240" key="GridCell.Tab.0.right" timestamp="1586311380744">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="240" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1585716483727" />
+    <state width="1238" height="240" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586311380744" />
     <state width="982" height="246" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136844" />
   </component>
 </project>
