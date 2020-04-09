@@ -16,4 +16,77 @@ package PureStorage;
  */
 
 public class NumberScores {
+    public static void main(String[] args) {
+        int res = 0;
+        int num = 5751;
+        res = compute_number_score(num);
+        System.out.println(res);
+    }
+
+    public static int compute_number_score(int num) {
+        final String numStr = String.valueOf(num);
+        final char[] nums = numStr.toCharArray();
+        int r0 = rules0(nums);
+        int r1 = rules1(nums);
+        int r2 = rules2(nums);
+        int r3 = rules3(num);
+        int r4 = rules4(nums);
+        return r0 + r1 + r2 + r3 + r4;
+    }
+
+    private static int rules0(char[] nums) {
+        int sum = 0;
+        for (char c : nums) {
+            if (c == '5') {
+                sum += 2;
+            }
+        }
+        return sum;
+    }
+
+    private static int rules1(char[] nums) {
+        int sum = 0;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == '3' && nums[i - 1] == '3') {
+                sum += 4;
+            }
+        }
+        return sum;
+    }
+
+    private static int rules2(char[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+        int sum = 0;
+        int curLen = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] - nums[i - 1] == 1) {
+                curLen++;
+            } else {
+                sum += curLen * curLen;
+                curLen = 1;
+            }
+        }
+        sum += curLen * curLen;
+        return sum;
+    }
+
+    private static int rules3(int num) {
+        if (num % 6 == 0) {
+            return 6;
+        }
+        return 0;
+    }
+
+    private static int rules4(char[] nums) {
+        int sum = 0;
+        for (char c : nums) {
+            int temp = c - '0';
+            if (temp % 2 == 1) {
+                sum += 1;
+            }
+        }
+        return sum;
+    }
 }
