@@ -1,6 +1,6 @@
 package 美团;
 
-/*  代金券组合
+/*  代金券组合（类似 LC 322 Coin Change）
     近期某商场由于周年庆，开启了“0 元购”活动。活动中，消费者可以通过组合手中的代金券，实现 0 元购买指定商品。
     聪明的小团想要用算法来帮助他快速计算：对于指定价格的商品，使用代金券凑出其价格即可，但所使用的代金券总面额不可超过商品价格。
     由于代金券数量有限，使用较少的代金券张数可以实现价值最大化，即最佳优惠。
@@ -27,5 +27,41 @@ package 美团;
     3
  */
 
+import java.util.Arrays;
+import java.util.Scanner;
+
+//  一维 DP
 public class 代金券组合 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextInt()) {
+            int amount = sc.nextInt();
+            if (amount == 0) {
+                break;
+            } else {
+                int len = sc.nextInt();
+                int[] nums = new int[len];
+                for (int i = 0; i < len; i++) {
+                    nums[i] = sc.nextInt();
+                }
+
+                int[] dp = new int[amount + 1];
+                Arrays.fill(dp, amount + 1);
+                dp[0] = 0;
+
+                for (int i = 1; i <= amount; i++) {
+                    for (int j : nums) {
+                        if (j <= i) {
+                            dp[i] = Math.min(dp[i], dp[i - j] + 1);
+                        }
+                    }
+                }
+                if (dp[amount] > amount) {
+                    System.out.println("Impossible");
+                } else {
+                    System.out.println(dp[amount]);
+                }
+            }
+        }
+    }
 }

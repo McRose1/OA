@@ -60,7 +60,64 @@ package 美团;
     输出例子 2：
     89
  */
+import java.util.Scanner;
 
-//  三维 DP
+//  DFS + Backtracking
 public class 星际穿越 {
+    private static int[][] dirs = {{1, 0, 0}, {-1, 0, 0}, {0, 1, 0}, {0, -1, 0}, {0, 0, 1}, {0, 0, -1}};
+    private static int max = 0;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        if (!sc.hasNextLine()) return;
+        String line = sc.nextLine();
+        Scanner lineScanner = new Scanner(line);
+        int N = lineScanner.nextInt();
+        if (N == 0) {
+            System.out.println(max);
+            return;
+        }
+        int[][][] graph = new int[N][N][N];
+        int maxP = 0;
+        int startX = 0;
+        int startY = 0;
+        int startZ = 0;
+        for (int i = 0; i < N * N * N; i++) {
+            line = sc.nextLine();
+            lineScanner = new Scanner(line);
+            int X = lineScanner.nextInt();
+            int Y = lineScanner.nextInt();
+            int Z = lineScanner.nextInt();
+            int P = lineScanner.nextInt();
+            graph[X][Y][Z] = P;
+            // 寻找起点
+            if (P > maxP) {
+                startX = X;
+                startY = Y;
+                startZ = Z;
+                maxP = P;
+            }
+        }
+        dfs(graph, N, startX, startY, startZ, 0);
+        System.out.println(max);
+    }
+
+    private static void dfs(int[][][] graph, int N, int X, int Y, int Z, int cur) {
+        cur += graph[X][Y][Z];
+        for (int[] dir : dirs) {
+            int nextX = X + dir[0];
+            int nextY = Y + dir[1];
+            int nextZ = Z + dir[2];
+            if (nextX < 0 || nextY < 0 || nextZ < 0 || nextX >= N || nextY >= N || nextZ >= N ||
+            graph[nextX][nextY][nextZ] == -1 || graph[nextX][nextY][nextZ] >= graph[X][Y][Z]) {
+                continue;
+            }
+            int temp = graph[X][Y][Z];
+            // 防止再次 visit
+            graph[X][Y][Z] = -1;
+            dfs(graph, N, nextX, nextY, nextZ, cur);
+            // backtrack
+            graph[X][Y][Z] = temp;
+        }
+        max = Math.max(max, cur);
+    }
 }
