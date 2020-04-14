@@ -15,20 +15,24 @@ import java.util.Calendar;
 
 public class AdaLovelaceDay {
     public static void main(String[] args) {
-        int year = 2018;
+        int year = 2020;
         int day = whichDay(year);
         System.out.println(day);
     }
     public static int whichDay(int year) {
         Calendar c = Calendar.getInstance();
         c.set(Calendar.YEAR, year);
+        // The value for month is 0-indexed, actually it's October
         c.set(Calendar.MONTH, 9);
+        // We first get 1st October 2018, given 2 so it's Monday
         c.set(Calendar.DATE, 1);
         int day = c.get(Calendar.DAY_OF_WEEK);
+        // if it's Sunday, Monday or Tuesday, the 2nd Tuesday is in the next week of 1st October
         if (day <= 3) {
-            return 3 - day + 8;
+            return 1 + 7 + (3 - day);
+        // the 2nd Tuesday is in the next 2 weeks of 1st October
         } else {
-            return 7 - day + 11;
+            return 1 + 14 - (day - 3);
         }
     }
 }

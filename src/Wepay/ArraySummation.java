@@ -2,8 +2,8 @@ package Wepay;
 
 /*  Array Summation
     Write a function that takes two integer arrays as inputs.
-    Your function will return TRUE if any two of the numbers in the first array, inputs, add up to any of the numbers in the second array, tests,
-    and FALSE otherwise.
+    Your function will return TRUE if any two of the numbers in the first array, inputs,
+    add up to any of the numbers in the second array, tests, and FALSE otherwise.
 
     For example:
     If you were given the arrays inputs: [-1, 8, 3] and tests: [3, 7, 2], you would return TRUE, because -1 + 3 is 2,
@@ -16,21 +16,31 @@ package Wepay;
     Arrays will contain between 1 and 200 elements each.
  */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class ArraySummation {
     public static void main(String[] args) {
-        // List<Integer> inputs =  new ArrayList<>(Arrays.asList(-1, 8, 3));
-        List<Integer> inputs =  new ArrayList<>(Arrays.asList(9, 6, 12));
-        // List<Integer> tests =  new ArrayList<>(Arrays.asList(3, 7, 2));
-        List<Integer> tests =  new ArrayList<>(Arrays.asList(1, 2, 3));
+        List<Integer> inputs =  new ArrayList<>(Arrays.asList(-1, -1, 8, 8, 3, 3));
+        //List<Integer> inputs =  new ArrayList<>(Arrays.asList(9, 6, 12));
+        List<Integer> tests =  new ArrayList<>(Arrays.asList(3, 7, 2));
+        //List<Integer> tests =  new ArrayList<>(Arrays.asList(1, 2, 3));
         boolean res = canSum(inputs, tests);
         System.out.println(res);
     }
     public static boolean canSum(List<Integer> inputs, List<Integer> tests) {
+        if (inputs.size() == 1) return false;
+        Set<Integer> set = new HashSet<>();
+        for (int target : tests) {
+            for (int num : inputs) {
+                if (set.contains(num)) {
+                    return true;
+                } else {
+                    set.add(target - num);
+                }
+            }
+        }
+        return false;
+        /*
         HashSet<Integer> sum = new HashSet<>();
         for (int i = 0; i < inputs.size(); i++) {
             for (int j = i + 1; j < inputs.size(); j++) {
@@ -43,5 +53,7 @@ public class ArraySummation {
             }
         }
         return false;
+
+         */
     }
 }

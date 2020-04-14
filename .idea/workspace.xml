@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a4a878-c013-4fd2-a038-5b46c5e1cdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wepay/AdaLovelaceDay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wepay/ArraySummation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Wepay/SlidingBlocks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/百词斩/压缩字符串.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/美团/字符串排序.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/美团/字符串排序.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/美团/工作安排.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/美团/工作安排.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/Wepay/AdaLovelaceDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Wepay/AdaLovelaceDay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/Wepay/ArraySummation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Wepay/ArraySummation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/Wepay/SlidingBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Wepay/SlidingBlocks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wepay/AdaLovelaceDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wepay/AdaLovelaceDay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wepay/ArraySummation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wepay/ArraySummation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Wepay/SlidingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wepay/SlidingBlocks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +40,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.AdaLovelaceDay">
+  <component name="RunManager" selected="Application.压缩字符串">
     <configuration name="斐波那契数列" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="美团.斐波那契数列" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="压缩字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="百词斩.压缩字符串" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="百词斩.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,12 +93,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LockUseAnalyzer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PureStorage.LockUseAnalyzer" />
+    <configuration name="SlidingBlocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Wepay.SlidingBlocks" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="PureStorage.*" />
+          <option name="PATTERN" value="Wepay.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,10 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AdaLovelaceDay" />
+        <item itemvalue="Application.压缩字符串" />
+        <item itemvalue="Application.SlidingBlocks" />
         <item itemvalue="Application.ArraySummation" />
+        <item itemvalue="Application.AdaLovelaceDay" />
         <item itemvalue="Application.斐波那契数列" />
-        <item itemvalue="Application.LockUseAnalyzer" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +213,8 @@
       <workItem from="1586565416474" duration="6730000" />
       <workItem from="1586652333984" duration="4676000" />
       <workItem from="1586734938744" duration="4881000" />
+      <workItem from="1586807555198" duration="6851000" />
+      <workItem from="1586823806253" duration="2431000" />
     </task>
     <servers />
   </component>
@@ -213,26 +230,54 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="906" y="155" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1586746138624" />
-    <state width="1238" height="231" key="GridCell.Tab.0.bottom" timestamp="1586746943474">
+    <state width="1238" height="222" key="GridCell.Tab.0.bottom" timestamp="1586829484593">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586746943474" />
-    <state width="982" height="246" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136845" />
-    <state width="1238" height="231" key="GridCell.Tab.0.center" timestamp="1586746943473">
+    <state width="1238" height="239" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
+    <state width="1238" height="222" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586829484593" />
+    <state width="982" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766249" />
+    <state width="1238" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411153" />
+    <state width="1238" height="222" key="GridCell.Tab.0.center" timestamp="1586829484592">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586746943473" />
-    <state width="982" height="246" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136843" />
-    <state width="1238" height="231" key="GridCell.Tab.0.left" timestamp="1586746943472">
+    <state width="1238" height="239" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
+    <state width="1238" height="222" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586829484592" />
+    <state width="982" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766247" />
+    <state width="1238" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
+    <state width="1238" height="222" key="GridCell.Tab.0.left" timestamp="1586829484592">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586746943472" />
-    <state width="982" height="246" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136842" />
-    <state width="1238" height="231" key="GridCell.Tab.0.right" timestamp="1586746943473">
+    <state width="1238" height="239" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
+    <state width="1238" height="222" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586829484592" />
+    <state width="982" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766246" />
+    <state width="1238" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411146" />
+    <state width="1238" height="222" key="GridCell.Tab.0.right" timestamp="1586829484593">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="231" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586746943473" />
-    <state width="982" height="246" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1585699136844" />
+    <state width="1238" height="239" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
+    <state width="1238" height="222" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586829484593" />
+    <state width="982" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766248" />
+    <state width="1238" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
+    <state width="1238" height="246" key="GridCell.Tab.1.bottom" timestamp="1586820011751">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="246" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586820011751" />
+    <state width="1238" height="246" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586807628515" />
+    <state width="1238" height="246" key="GridCell.Tab.1.center" timestamp="1586820011750">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="246" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1586820011750" />
+    <state width="1238" height="246" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1586807628515" />
+    <state width="1238" height="246" key="GridCell.Tab.1.left" timestamp="1586820011750">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="246" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1586820011750" />
+    <state width="1238" height="246" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1586807628514" />
+    <state width="1238" height="246" key="GridCell.Tab.1.right" timestamp="1586820011750">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state width="1238" height="246" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1586820011750" />
+    <state width="1238" height="246" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1586807628515" />
     <state x="856" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586735435334">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
