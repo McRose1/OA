@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a4a878-c013-4fd2-a038-5b46c5e1cdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/百词斩/压缩字符串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shopee/Shopee的办公室.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shopee/Shopee的零食柜.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shopee/实现字通配符.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shopee/建物流中转站.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/Wepay/AdaLovelaceDay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Wepay/AdaLovelaceDay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/Wepay/ArraySummation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Wepay/ArraySummation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/Wepay/SlidingBlocks.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Wepay/SlidingBlocks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wepay/AdaLovelaceDay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wepay/AdaLovelaceDay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wepay/ArraySummation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wepay/ArraySummation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Wepay/SlidingBlocks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Wepay/SlidingBlocks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,40 +36,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.压缩字符串">
-    <configuration name="斐波那契数列" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.斐波那契数列" />
+  <component name="RunManager" selected="Application.建物流中转站">
+    <configuration name="建物流中转站" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Shopee.建物流中转站" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="压缩字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="百词斩.压缩字符串" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="百词斩.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdaLovelaceDay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Wepay.AdaLovelaceDay" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Wepay.*" />
+          <option name="PATTERN" value="Shopee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,12 +67,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Shopee的办公室" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Shopee.Shopee的办公室" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Shopee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Shopee的零食柜" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Shopee.Shopee的零食柜" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Shopee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SlidingBlocks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Wepay.SlidingBlocks" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Wepay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="压缩字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="百词斩.压缩字符串" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="百词斩.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.压缩字符串" />
+        <item itemvalue="Application.建物流中转站" />
+        <item itemvalue="Application.Shopee的零食柜" />
+        <item itemvalue="Application.Shopee的办公室" />
         <item itemvalue="Application.SlidingBlocks" />
         <item itemvalue="Application.ArraySummation" />
-        <item itemvalue="Application.AdaLovelaceDay" />
-        <item itemvalue="Application.斐波那契数列" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +228,7 @@
       <workItem from="1586734938744" duration="4881000" />
       <workItem from="1586807555198" duration="6851000" />
       <workItem from="1586823806253" duration="2431000" />
+      <workItem from="1586884568419" duration="19127000" />
     </task>
     <servers />
   </component>
@@ -222,40 +236,44 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="104" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585692228573">
+    <state x="136" y="23" key="#Project_Structure" timestamp="1586911869126">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="104" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1585692228573" />
+    <state x="136" y="23" key="#Project_Structure/0.23.1280.777@0.23.1280.777" timestamp="1586911869126" />
+    <state x="104" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586909586276">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="104" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777@0.23.1280.777" timestamp="1586909586276" />
     <state x="906" y="155" key="#com.intellij.ide.util.MemberChooser" timestamp="1586746138624">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="906" y="155" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1586746138624" />
-    <state width="1238" height="222" key="GridCell.Tab.0.bottom" timestamp="1586829484593">
+    <state width="1238" height="222" key="GridCell.Tab.0.bottom" timestamp="1586916102487">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
-    <state width="1238" height="222" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586829484593" />
+    <state width="1238" height="222" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
     <state width="982" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766249" />
     <state width="1238" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411153" />
-    <state width="1238" height="222" key="GridCell.Tab.0.center" timestamp="1586829484592">
+    <state width="1238" height="222" key="GridCell.Tab.0.center" timestamp="1586916102487">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
-    <state width="1238" height="222" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586829484592" />
+    <state width="1238" height="222" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
     <state width="982" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766247" />
     <state width="1238" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
-    <state width="1238" height="222" key="GridCell.Tab.0.left" timestamp="1586829484592">
+    <state width="1238" height="222" key="GridCell.Tab.0.left" timestamp="1586916102487">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
-    <state width="1238" height="222" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586829484592" />
+    <state width="1238" height="222" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
     <state width="982" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766246" />
     <state width="1238" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411146" />
-    <state width="1238" height="222" key="GridCell.Tab.0.right" timestamp="1586829484593">
+    <state width="1238" height="222" key="GridCell.Tab.0.right" timestamp="1586916102487">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
-    <state width="1238" height="222" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586829484593" />
+    <state width="1238" height="222" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
     <state width="982" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766248" />
     <state width="1238" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
     <state width="1238" height="246" key="GridCell.Tab.1.bottom" timestamp="1586820011751">
