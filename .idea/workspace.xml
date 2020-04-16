@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a4a878-c013-4fd2-a038-5b46c5e1cdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Shopee/Shopee的办公室.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shopee/Shopee的零食柜.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shopee/实现字通配符.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Shopee/建物流中转站.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shopee/Shopee的发财树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shopee/ThreeSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Shopee/UniquePaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/回文子串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/大数加法.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/Shopee/实现字通配符.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Shopee/实现字通配符.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/Shopee/建物流中转站.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/Shopee/建物流中转站.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +35,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -40,7 +44,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.建物流中转站">
+  <component name="RunManager" selected="Application.大数加法">
     <configuration name="建物流中转站" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Shopee.建物流中转站" />
       <module name="OA" />
@@ -54,12 +58,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArraySummation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Wepay.ArraySummation" />
+    <configuration name="大数加法" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.大数加法" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Wepay.*" />
+          <option name="PATTERN" value="美团.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,6 +73,19 @@
     </configuration>
     <configuration name="Shopee的办公室" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Shopee.Shopee的办公室" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Shopee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Shopee的发财树" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Shopee.Shopee的发财树" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -99,6 +116,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Wepay.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ThreeSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Shopee.ThreeSum" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Shopee.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -199,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.大数加法" />
+        <item itemvalue="Application.ThreeSum" />
         <item itemvalue="Application.建物流中转站" />
-        <item itemvalue="Application.Shopee的零食柜" />
         <item itemvalue="Application.Shopee的办公室" />
         <item itemvalue="Application.SlidingBlocks" />
-        <item itemvalue="Application.ArraySummation" />
       </list>
     </recent_temporary>
   </component>
@@ -229,6 +259,9 @@
       <workItem from="1586807555198" duration="6851000" />
       <workItem from="1586823806253" duration="2431000" />
       <workItem from="1586884568419" duration="19127000" />
+      <workItem from="1586916500100" duration="229000" />
+      <workItem from="1586927081397" duration="2000" />
+      <workItem from="1586990253888" duration="2983000" />
     </task>
     <servers />
   </component>
@@ -236,10 +269,14 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="136" y="23" key="#Project_Structure" timestamp="1586911869126">
+    <state x="136" y="23" key="#Project_Structure" timestamp="1586990558056">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="136" y="23" key="#Project_Structure/0.23.1280.777@0.23.1280.777" timestamp="1586911869126" />
+    <state x="136" y="23" key="#Project_Structure/0.23.1280.777@0.23.1280.777" timestamp="1586990558056" />
+    <state x="378" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1586991905677">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="378" y="173" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.23.1280.777@0.23.1280.777" timestamp="1586991905677" />
     <state x="104" y="108" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586909586276">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -248,32 +285,32 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="906" y="155" key="#com.intellij.ide.util.MemberChooser/0.23.1280.777@0.23.1280.777" timestamp="1586746138624" />
-    <state width="1238" height="222" key="GridCell.Tab.0.bottom" timestamp="1586916102487">
+    <state width="1238" height="222" key="GridCell.Tab.0.bottom" timestamp="1587002510288">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
-    <state width="1238" height="222" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
+    <state width="1238" height="222" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587002510288" />
     <state width="982" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766249" />
     <state width="1238" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411153" />
-    <state width="1238" height="222" key="GridCell.Tab.0.center" timestamp="1586916102487">
+    <state width="1238" height="222" key="GridCell.Tab.0.center" timestamp="1587002510287">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
-    <state width="1238" height="222" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
+    <state width="1238" height="222" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1587002510287" />
     <state width="982" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766247" />
     <state width="1238" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
-    <state width="1238" height="222" key="GridCell.Tab.0.left" timestamp="1586916102487">
+    <state width="1238" height="222" key="GridCell.Tab.0.left" timestamp="1587002510286">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
-    <state width="1238" height="222" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
+    <state width="1238" height="222" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1587002510286" />
     <state width="982" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766246" />
     <state width="1238" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411146" />
-    <state width="1238" height="222" key="GridCell.Tab.0.right" timestamp="1586916102487">
+    <state width="1238" height="222" key="GridCell.Tab.0.right" timestamp="1587002510288">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
-    <state width="1238" height="222" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1586916102487" />
+    <state width="1238" height="222" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1587002510288" />
     <state width="982" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766248" />
     <state width="1238" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
     <state width="1238" height="246" key="GridCell.Tab.1.bottom" timestamp="1586820011751">
@@ -300,5 +337,9 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="856" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.777@0.23.1280.777" timestamp="1586735435334" />
+    <state x="343" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1587000789473">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="343" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1587000789473" />
   </component>
 </project>
