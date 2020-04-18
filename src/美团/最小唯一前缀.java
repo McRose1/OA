@@ -27,7 +27,7 @@ package 美团;
  */
 
 import java.util.Scanner;
-//  Trie
+
 public class 最小唯一前缀 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -36,26 +36,23 @@ public class 最小唯一前缀 {
         for (int i = 0; i < n; i++) {
             strs[i] = sc.nextLine();
         }
+        for (String s : strs)
+            System.out.println(unique(s, strs));
+    }
 
-        for (int i = 0; i < n - 1; i ++) {
-            String s1 = strs[i];
-            for (int j = i + 1; j < n; j++) {
-                String s2 = strs[j];
-                int s1Idx = 0;
-                int s2Idx = 0;
-                while (s1Idx < s1.length() && s2Idx < s2.length()) {
-                    while (s1.charAt(s1Idx) == s2.charAt(s2Idx)) {
-                        s1Idx++;
-                        s2Idx++;
-                    }
-                    s1 = s1.substring(0, s1Idx + 1);
-                    strs[i] = s1;
-                    strs[j] = s2.substring(0, s2Idx + 1);
-                    break;
-                }
+    private static String unique(String s, String[] strs) {
+        // 前缀初始为首字符
+        String prefix = s.substring(0, 1);
+        // 跳过字符串s本身
+        for (String single : strs) {
+            if (single.equals(s)) {
+                continue;
+            }
+            // 字符串 single 与字符串 s 具有相同的前缀 prefix，前缀需要往后延长
+            while (single.indexOf(prefix) == 0 && prefix.length() < s.length()) {
+                prefix = s.substring(0, prefix.length() + 1);
             }
         }
-        System.out.println(strs[0]);
-        System.out.println(strs[1]);
+        return prefix;
     }
 }
