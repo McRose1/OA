@@ -32,27 +32,43 @@ package 美团;
  */
 
 import java.util.Scanner;
-
+//  二维 DP
 public class 字符串模式匹配 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String pat = sc.nextLine();
-        String dest = sc.nextLine();
+        String p = sc.nextLine();
+        String s = sc.nextLine();
 
-        int patIdx = 0;
-        int destIdx = 0;
-        while (patIdx < pat.length() && destIdx < dest.length()) {
-            if (pat.charAt(patIdx) == dest.charAt(destIdx) || pat.charAt(patIdx) == '?') {
-                patIdx++;
-                destIdx++;
-            // '*' 可以匹配 0 个字符、1 个字符或多个字符
-            } else if (pat.charAt(patIdx) == '*') {
-                dfs(pat, dest, patIdx, destIdx);
+        if (p == null || s == null) {
+            System.out.println(0);
+            return;
+        }
+        if (p.equals("*") || p.equals(s)) {
+            System.out.println(1);
+            return;
+        }
+        int pLen = p.length();
+        int sLen = s.length();
+
+        boolean[][] dp = new boolean[pLen + 1][sLen + 1];
+        dp[0][0] = true;
+
+        for (int pIdx = 1; pIdx <= pLen; pIdx++) {
+            if (p.charAt(pIdx - 1) == '*') {
+                dp[pIdx][0] = dp[pIdx - 1][0];
             }
         }
-    }
 
-    private static void dfs(String pat, String dest, int patIdx, int destIdx) {
-
+        for (int pIdx = 1; pIdx <= pLen; pIdx++) {
+            for (int sIdx = 1; sIdx <= sLen; sIdx++) {
+                if (p.charAt(pIdx - 1) == '?' || p.charAt(pIdx - 1) == s.charAt(sIdx - 1)) {
+                    dp[pIdx][sIdx] = dp[pIdx - 1][sIdx - 1];
+                } else if (p.charAt(pIdx - 1) == '*') {
+                    dp[pIdx][sIdx] = dp[pIdx - 1][sIdx] || dp[pIdx][sIdx - 1];
+                }
+            }
+        }
+        int res = dp[pLen][sLen] ? 1 : 0;
+        System.out.println(res);
     }
 }
