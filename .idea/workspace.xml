@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a4a878-c013-4fd2-a038-5b46c5e1cdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/微众/分礼物.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/微众/回文游戏.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/微众/抽卡.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/美团/寻找最后的山峰.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/美团/棋子翻转.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/美团/比大小.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/四三九九/两个连续str作为子串的最短字符串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/广发/进制转换.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/幸运星.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/最优购买策略.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/月份天数.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/滑动窗口的中位数.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/相似.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/规范化货币.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/美团/轮流出局.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/四三九九/约瑟夫环.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/四三九九/约瑟夫环.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/美团/比大小.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/美团/比大小.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +48,48 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.比大小">
-    <configuration name="比大小" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.比大小" />
+  <component name="RunManager" selected="Application.规范化货币">
+    <configuration name="规范化货币" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.规范化货币" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="进制转换" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="广发.进制转换" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="广发.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="相似" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.相似" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="幸运星" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.幸运星" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -85,8 +127,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="星际穿越" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.星际穿越" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="最小唯一前缀" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="美团.最小唯一前缀" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="字符串模式匹配" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.字符串模式匹配" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="合并金币" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.合并金币" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -113,19 +194,6 @@
     </configuration>
     <configuration name="迷宫寻路" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="美团.迷宫寻路" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="字符串模式匹配" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.字符串模式匹配" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -176,8 +244,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="大数加法" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.大数加法" />
+    <configuration name="压缩字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="百词斩.压缩字符串" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="百词斩.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="代金券组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.代金券组合" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -189,12 +270,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="压缩字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="百词斩.压缩字符串" />
+    <configuration name="大数加法" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.大数加法" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="百词斩.*" />
+          <option name="PATTERN" value="美团.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -228,8 +309,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="代金券组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.代金券组合" />
+    <configuration name="棋子翻转" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.棋子翻转" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -241,8 +322,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="棋子翻转" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.棋子翻转" />
+    <configuration name="月份天数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.月份天数" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -293,6 +374,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="整数分解" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.整数分解" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="约瑟夫环" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="四三九九.约瑟夫环" />
       <module name="OA" />
@@ -306,39 +400,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="星际穿越" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.星际穿越" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="合并金币" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.合并金币" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test4.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/四三九九/test4.js" working-dir="$PROJECT_DIR$/src/四三九九">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.比大小" />
-        <item itemvalue="Node.js.test4.js" />
+        <item itemvalue="Application.规范化货币" />
+        <item itemvalue="Application.幸运星" />
+        <item itemvalue="Application.相似" />
+        <item itemvalue="Application.进制转换" />
+        <item itemvalue="Application.Shopee的发财树" />
       </list>
     </recent_temporary>
   </component>
@@ -376,6 +444,11 @@
       <workItem from="1587434400086" duration="802000" />
       <workItem from="1587470409126" duration="10677000" />
       <workItem from="1587521193643" duration="26000" />
+      <workItem from="1587569046279" duration="2000" />
+      <workItem from="1587587311190" duration="6130000" />
+      <workItem from="1587604843452" duration="73000" />
+      <workItem from="1587605064719" duration="11000" />
+      <workItem from="1587629432511" duration="9220000" />
     </task>
     <servers />
   </component>
@@ -403,61 +476,61 @@
       <screen x="153" y="823" width="1024" height="745" />
     </state>
     <state x="479" y="873" key="#test4.js/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1587434508121" />
-    <state width="1238" height="220" key="GridCell.Tab.0.bottom" timestamp="1587491850483">
+    <state width="1238" height="220" key="GridCell.Tab.0.bottom" timestamp="1587653540091">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
-    <state width="1238" height="220" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587491850483" />
+    <state width="1238" height="220" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587653540091" />
     <state width="982" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766249" />
     <state width="1238" height="239" key="GridCell.Tab.0.bottom/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411153" />
     <state width="1238" height="222" key="GridCell.Tab.0.bottom/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369042" />
-    <state width="1238" height="220" key="GridCell.Tab.0.center" timestamp="1587491850482">
+    <state width="1238" height="220" key="GridCell.Tab.0.center" timestamp="1587653540091">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
-    <state width="1238" height="220" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1587491850482" />
+    <state width="1238" height="220" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1587653540091" />
     <state width="982" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766247" />
     <state width="1238" height="239" key="GridCell.Tab.0.center/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
     <state width="1238" height="222" key="GridCell.Tab.0.center/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369041" />
-    <state width="1238" height="220" key="GridCell.Tab.0.left" timestamp="1587491850482">
+    <state width="1238" height="220" key="GridCell.Tab.0.left" timestamp="1587653540091">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586820011755" />
-    <state width="1238" height="220" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1587491850482" />
+    <state width="1238" height="220" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1587653540091" />
     <state width="982" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766246" />
     <state width="1238" height="239" key="GridCell.Tab.0.left/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411146" />
     <state width="1238" height="222" key="GridCell.Tab.0.left/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369041" />
-    <state width="1238" height="220" key="GridCell.Tab.0.right" timestamp="1587491850483">
+    <state width="1238" height="220" key="GridCell.Tab.0.right" timestamp="1587653540091">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="239" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586820011756" />
-    <state width="1238" height="220" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1587491850483" />
+    <state width="1238" height="220" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1587653540091" />
     <state width="982" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1586815766248" />
     <state width="1238" height="239" key="GridCell.Tab.0.right/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1586813411148" />
     <state width="1238" height="222" key="GridCell.Tab.0.right/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369042" />
-    <state width="1238" height="246" key="GridCell.Tab.1.bottom" timestamp="1587434369038">
+    <state width="1238" height="246" key="GridCell.Tab.1.bottom" timestamp="1587631582531">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="246" key="GridCell.Tab.1.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586820011751" />
-    <state width="1238" height="246" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587418875523" />
+    <state width="1238" height="246" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1587631582531" />
     <state width="1238" height="246" key="GridCell.Tab.1.bottom/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369038" />
-    <state width="1238" height="246" key="GridCell.Tab.1.center" timestamp="1587434369037">
+    <state width="1238" height="246" key="GridCell.Tab.1.center" timestamp="1587631582530">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="246" key="GridCell.Tab.1.center/0.0.1280.800@0.0.1280.800" timestamp="1586820011750" />
-    <state width="1238" height="246" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1587418875523" />
+    <state width="1238" height="246" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1587631582530" />
     <state width="1238" height="246" key="GridCell.Tab.1.center/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369037" />
-    <state width="1238" height="246" key="GridCell.Tab.1.left" timestamp="1587434369037">
+    <state width="1238" height="246" key="GridCell.Tab.1.left" timestamp="1587631582530">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="246" key="GridCell.Tab.1.left/0.0.1280.800@0.0.1280.800" timestamp="1586820011750" />
-    <state width="1238" height="246" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1587418875522" />
+    <state width="1238" height="246" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1587631582530" />
     <state width="1238" height="246" key="GridCell.Tab.1.left/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369037" />
-    <state width="1238" height="246" key="GridCell.Tab.1.right" timestamp="1587434369037">
+    <state width="1238" height="246" key="GridCell.Tab.1.right" timestamp="1587631582530">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="246" key="GridCell.Tab.1.right/0.0.1280.800@0.0.1280.800" timestamp="1586820011750" />
-    <state width="1238" height="246" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1587418875523" />
+    <state width="1238" height="246" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1587631582530" />
     <state width="1238" height="246" key="GridCell.Tab.1.right/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369037" />
     <state x="856" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586735435334">
       <screen x="0" y="23" width="1280" height="777" />
