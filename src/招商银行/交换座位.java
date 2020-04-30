@@ -41,16 +41,75 @@ public class 交换座位 {
         for (int i = 0; i < n * 2; i++) {
             nums[i] = sc.nextInt();
         }
-        int count = 0;
-        for (int i = 0; i < n; i += 2) {
-            if (Math.abs(nums[i] - nums[i + 1]) == 1) {
-                count++;
+
+        // couples[x] = {i, j} means that couple #x is at couches i and j (1 indexed)
+        int[][] couples = new int[n][2];
+
+        for (int i = 0; i < nums.length; i++) {
+            // row[i]/2 为情侣对#，i/2 + 1为沙发#
+            add(couples[nums[i] / 2], i / 2 + 1);
+        }
+        // couples: [[1, 2], [1, 2]]
+
+        // adj[x] = {i, j} means that x-th couch connected to couches i,j (all 1 indexed) by couples
+        int[][] adj = new int[n + 1][2];
+        for (int[] couple : couples) {
+            add(adj[couple[0]], couple[1]);
+            add(adj[couple[1]], couple[0]);
+        }
+        // adj: [[2, 2], [2, 2]]
+
+        // The answer will be N minus the number of cycles in adj.
+        int ans = n;
+        // For each couch
+        for (int r = 1; r <= n; r++) {
+            // If this couch has no people needing to be paired, continue
+            if (adj[r][0] == 0 && adj[r][1] == 0) {
+                continue;
+            }
+            // Otherwise, there is a cycle starting at couch r.
+            // We will use two pointers x, y with y faster than x by one turn.
+            ans--;
+            int x = r;
+            int y = pop(adj[r]);
+            // When y reaches the start 'r', we've reached the end of the cycle.
+            while (y != r) {
+                // We are at some couch with edges going to 'x' and 'new'.
+                // We remove the previous edge, since we came from x.
+                remove(adj[y], x);
+
+                // We update x, y appropriately: y becomes new and x becomes y.
+                x = y;
+                y = pop(adj[y]);
             }
         }
-        if (count == n) {
-            System.out.println(0);
-            return;
+        System.out.println(ans);
+    }
+    // Replace the next 0 element with x.
+    private static void add(int[] pair, int x) {
+        if (pair[0] == 0) {
+            pair[0] = x;
+        } else {
+            pair[1] = x;
         }
-        return;
+    }
+    // Remove x from pair, replacing it with 0.
+    private static void remove(int[] pair, int x) {
+        if (pair[0] == x) {
+            pair[0] = 0;
+        } else {
+            pair[1] = 0;
+        }
+    }
+    // Remove the next non-0 element from pair, replacing it with 0.
+    private static int pop(int[] pair) {
+        int x = pair[0];
+        if (x != 0) {
+            pair[0] = 0;
+        } else {
+            x = pair[1];
+            pair[1] = 0;
+        }
+        return x;
     }
 }
