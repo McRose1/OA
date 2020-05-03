@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a4a878-c013-4fd2-a038-5b46c5e1cdcd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/拼多多/两两配对差值最小.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/拼多多/回合制游戏.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/拼多多/种树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/拼多多/选靓号.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/招商银行/交换座位.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/招商银行/交换座位.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.交换座位">
+  <component name="RunManager" selected="Application.回合制游戏">
     <configuration name="考试成绩" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="快手.考试成绩" />
       <module name="OA" />
@@ -53,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="交换座位" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="招商银行.交换座位" />
+    <configuration name="回合制游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="拼多多.回合制游戏" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="招商银行.*" />
+          <option name="PATTERN" value="拼多多.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,97 +101,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Robolox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="最小唯一前缀" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.最小唯一前缀" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="开根号" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="乐鑫.开根号" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="乐鑫.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="合并金币" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.合并金币" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="回文游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="微众.回文游戏" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="微众.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="字符串最长公共前缀" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.字符串最长公共前缀" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="回文子串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.回文子串" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="回文子串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.回文子串" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -326,6 +238,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="交换座位" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="招商银行.交换座位" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="招商银行.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="无穷素数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="乐鑫.无穷素数" />
       <module name="OA" />
@@ -456,6 +381,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="最小唯一前缀" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.最小唯一前缀" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="幸运星" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="美团.幸运星" />
       <module name="OA" />
@@ -495,9 +433,87 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="开根号" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="乐鑫.开根号" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="乐鑫.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="合并金币" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.合并金币" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="回文游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="微众.回文游戏" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="微众.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="字符串最长公共前缀" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.字符串最长公共前缀" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="回文子串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.回文子串" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="回文子串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.回文子串" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.交换座位" />
+        <item itemvalue="Application.回合制游戏" />
         <item itemvalue="Application.ConvertToW" />
         <item itemvalue="Application.K点游戏" />
         <item itemvalue="Application.考试成绩" />
@@ -556,6 +572,7 @@
       <workItem from="1588129678088" duration="38000" />
       <workItem from="1588129746719" duration="532000" />
       <workItem from="1588173215743" duration="1256000" />
+      <workItem from="1588475452639" duration="2984000" />
     </task>
     <servers />
   </component>
@@ -584,38 +601,38 @@
       <screen x="153" y="823" width="1024" height="745" />
     </state>
     <state x="479" y="873" key="#test4.js/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1587434508121" />
-    <state width="982" height="212" key="GridCell.Tab.0.bottom" timestamp="1588186632652">
-      <screen x="153" y="823" width="1024" height="745" />
+    <state width="1238" height="207" key="GridCell.Tab.0.bottom" timestamp="1588478592413">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1587839181132" />
-    <state width="1238" height="208" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1588130339998" />
+    <state width="1238" height="207" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1588478592413" />
     <state width="982" height="212" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1588186584688" />
     <state width="1238" height="208" key="GridCell.Tab.0.bottom/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1587942773171" />
     <state width="1238" height="222" key="GridCell.Tab.0.bottom/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369042" />
     <state width="982" height="212" key="GridCell.Tab.0.bottom/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1588186632652" />
-    <state width="982" height="212" key="GridCell.Tab.0.center" timestamp="1588186632651">
-      <screen x="153" y="823" width="1024" height="745" />
+    <state width="1238" height="207" key="GridCell.Tab.0.center" timestamp="1588478592412">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1587839181130" />
-    <state width="1238" height="208" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1588130339998" />
+    <state width="1238" height="207" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1588478592412" />
     <state width="982" height="212" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1588186584686" />
     <state width="1238" height="208" key="GridCell.Tab.0.center/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1587942773169" />
     <state width="1238" height="222" key="GridCell.Tab.0.center/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369041" />
     <state width="982" height="212" key="GridCell.Tab.0.center/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1588186632651" />
-    <state width="982" height="212" key="GridCell.Tab.0.left" timestamp="1588186632650">
-      <screen x="153" y="823" width="1024" height="745" />
+    <state width="1238" height="207" key="GridCell.Tab.0.left" timestamp="1588478592412">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1587839181130" />
-    <state width="1238" height="208" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1588130339998" />
+    <state width="1238" height="207" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1588478592412" />
     <state width="982" height="212" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1588186584685" />
     <state width="1238" height="208" key="GridCell.Tab.0.left/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1587942773168" />
     <state width="1238" height="222" key="GridCell.Tab.0.left/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369041" />
     <state width="982" height="212" key="GridCell.Tab.0.left/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1588186632650" />
-    <state width="982" height="212" key="GridCell.Tab.0.right" timestamp="1588186632651">
-      <screen x="153" y="823" width="1024" height="745" />
+    <state width="1238" height="207" key="GridCell.Tab.0.right" timestamp="1588478592413">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="224" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1587839181131" />
-    <state width="1238" height="208" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1588130339998" />
+    <state width="1238" height="207" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1588478592413" />
     <state width="982" height="212" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1588186584687" />
     <state width="1238" height="208" key="GridCell.Tab.0.right/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1587942773170" />
     <state width="1238" height="222" key="GridCell.Tab.0.right/153.823.1024.745/0.23.1280.777@0.23.1280.777" timestamp="1587434369042" />
