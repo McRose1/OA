@@ -22,15 +22,20 @@ package 拼多多;
     1 2 1 2 1 3 1
  */
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-
+/*  DFS + 剪枝
+    剪枝关键在于每次 DFS 之前判断当前剩余的坑位数量和任意品种的树的数量之间的关系
+    如果任意品种树的数量 > （坑位 + 1）/ 2 -> 直接 return false
+ */
 public class 种树 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
-        int[] nums = new int[N];
+        int[] nums = new int[N + 1];
         int sum = 0;
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i <= N; i++) {
             nums[i] = sc.nextInt();
             sum += nums[i];
         }
@@ -38,13 +43,41 @@ public class 种树 {
             System.out.println("-");
             return;
         }
-        int[] res = new int[sum];
-        for (int i = 0; i < N; i++) {
-            int j = i + 1;
-            for (int k = 0; k < sum; k++) {
-                res[k] = nums[i];
+        List<String> res = new ArrayList<>();
+        if (dfs(0, nums, N, sum, res)) {
+            for (String re : res) {
+                System.out.print(Integer.parseInt(re) + " ");
+            }
+        } else {
+            System.out.println("-");
+        }
+    }
 
+    private static boolean dfs(int count, int[] nums, int N, int sum, List<String> res) {
+        if (count == sum) {
+            return true;
+        }
+        int remain = sum - count;
+        // 剪枝
+        for (int i = 1; i <= N; i++) {
+            if (nums[i] > (remain + 1) / 2) {
+                return false;
             }
         }
+        // 满足字典序最小，从头往后遍历
+        for (int i = 1; i <= N; i++) {
+            // 保证相邻两树种类不同
+            if (count == 0 || nums[i] != 0 && i != Integer.parseInt(res.get(count - 1))) {
+                nums[i]--;
+                res.add(i + "");
+                if (dfs(count + 1, nums, N, sum, res)) {
+                    return true;
+                }
+                // backtrack
+                nums[i]++;
+                res.remove(res.size() - 1);
+            }
+        }
+        return false;
     }
 }

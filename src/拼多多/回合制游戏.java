@@ -27,22 +27,43 @@ package 拼多多;
  */
 
 import java.util.Scanner;
-//  Greedy
+/*  Greedy
+    if buffedAttack <= 2 * normalAttack，一直使用普通攻击
+    else，优先使用蓄力攻击：如果 HP % buffedAttack = 0，那么一直用 buffedAttack，否则需要单独讨论最后一轮的情况：
+    如果 HP % buffedAttack 小于等于 normalAttack，最后一回合用 normalAttack
+    否则最后一轮还是用 buffedAttack
+ */
 public class 回合制游戏 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int HP = sc.nextInt();
         int normalAttack = sc.nextInt();
         int buffedAttack = sc.nextInt();
+
+        int res = 0;
+        if (buffedAttack <= 2 * normalAttack) {
+            res = HP % normalAttack == 0 ? HP / normalAttack : HP / normalAttack + 1;
+        } else {
+            // 不存在最后一击的选择
+            if (HP % buffedAttack == 0) {
+                res = (HP / buffedAttack) * 2;
+            } else {
+                // 最后一击用 normalAttack
+                if (HP % buffedAttack <= normalAttack) {
+                    res = (HP / buffedAttack) * 2 + 1;
+                }
+                // 最后一击用 buffedAttack
+                else {
+                    res = (HP / buffedAttack) * 2 + 2;
+                }
+            }
+        }
+        System.out.println(res);
     }
 }
 
-/*  DP (5%)
+/*  DP (5%)：数据规模太大，DP 会超时
 
-        if (HP == 0) {
-            System.out.println(0);
-            return;
-        }
         if (HP <= normalAttack) {
             System.out.println(1);
             return;

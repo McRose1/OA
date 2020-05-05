@@ -25,8 +25,11 @@ package 拼多多;
     3
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
-
+/*  Greedy
+    最大值和最小值配对，次大值和次小值配对，以此类推
+ */
 public class 两两配对差值最小 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -35,8 +38,15 @@ public class 两两配对差值最小 {
         for (int i = 0; i < n; i++) {
             nums[i] = sc.nextInt();
         }
-        for (int i = 0; i < n; i++) {
+        Arrays.sort(nums);
+
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0, j = n - 1; i < n / 2; i++, j--) {
+            max = Math.max(max, nums[i] + nums[j]);
+            min = Math.min(min, nums[i] + nums[j]);
         }
-        return;
+        System.out.println(max - min);
     }
 }
