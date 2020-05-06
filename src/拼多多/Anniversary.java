@@ -38,14 +38,23 @@ package 拼多多;
 
 import java.util.*;
 
-/*  DFS
-
+/*  DFS（看了答案也不会做）
+    dfs搜索所有可能路径的长度值。包括一个节点所有的儿子中选1个儿子，选2个儿子的情况（最多只能选择两条路布置）
+    1. 根据输入，得到所有节点的父节点字典和两两节点连通关系字典；
+    2. 找到根节点；
+    3. children集合维护每个节点的所有孩子节点，list记录每个子节点的候选路径列表，对于候选路径集合，枚举三种情况：
+        o 一个子节点都不选：则dist集合里面插入0；
+        o 只选择一个子节点：枚举所有子节点，将子节点候选列表里的所有路径长度都加上其父节点到此子节点路径长度，然后再插入父节点的候选集合列表；
+        o 选择两个子节点：枚举所有两两子节点组合，把两子节点的候选集合排列组合相加，再加上各自到父节点路径长度，存入父节点候选集合列表。
+    4. 找出根节点候选集合中不超过上限值的最大值，即为答案。
  */
 public class Anniversary {
     static int m;
+    // 存放以当前节点为根节点的子树下，每个孩子节点的候选队列
     static List<Integer> parents = new ArrayList<>();
-    // HashSet 存该母节点的子节点
+    // 存放以当前节点为根节点的所有的子节点
     static List<HashSet<Integer>> children = new ArrayList<>();
+    // 存放当前节点的所有可能路径长度
     static List<Integer> dist = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -65,47 +74,49 @@ public class Anniversary {
             int d = Integer.parseInt(strs[2]);
             // 一条道路要么不布置花灯，要么整条布置花灯，不能选择其中的某一段布置
             if (d > m) continue;
-            children.get(u).add(v);
-            parents.set(v, u);
-            dist.set(v, d);
+            children.get(u).add(v);     // {[1,2,3,4]}
+            parents.set(v, u);          // [-1,0,0,0,0]
+            dist.set(v, d);             // [0,1,2,3,4]
         }
         // 寻找树根
         int root = 0;
-        while (parents.get(root) != -1) {
+        while (parents.get(root) != -1) {   // parents.get(0)=-1
             root = parents.get(root);
         }
-        System.out.println(dfs(root).last());
+        // 返回 TreeSet 中的最大值
+        System.out.println(dfs(root).last());   // dfs(0)
     }
 
     private static TreeSet<Integer> dfs(int root) {
         TreeSet<Integer> res = new TreeSet<>();
-        int d = dist.get(root);
-        // 如果该节点的父节点选中该元素，表示不选取该节点所在分支
-        res.add(0);
-        if (children.get(root).size() == 0) {
-            res.add(d);
-            return res;
+        int d = dist.get(root);         // d = dist.get(0) = 0; d=1
+        res.add(0);                     // [0]
+
+        // 到达叶子节点
+        if (children.get(root).size() == 0) {   // children.get(1)=0
+            res.add(d);                         // [0,1]
+            return res;                         // return [0,1]
         }
 
-        // 每一个集合代表每个孩子节点的可选路劲
-        List<TreeSet<Integer>> set = new ArrayList<>();
-        for (int child : children.get(root)) {
-            set.add(dfs(child));
+        // 每一个集合代表每个孩子节点的可选路径
+        List<TreeSet<Integer>> list = new ArrayList<>();
+        for (int child : children.get(root)) {  // 1;2;3;4
+            list.add(dfs(child));               // dfs(1)->list.add([0,1])
         }
 
-        for (int i = 0; i < set.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {
             // 选中一个孩子分支的情况
-            for (int path : set.get(i)) {
-                if (d + path <= m) {
-                    res.add(d + path);
+            for (int path : list.get(i)) {      // path : list.get(0)=[0,1]
+                if (d + path <= m) {            // 0+[0,1]
+                    res.add(d + path);          // res.add(0);res.add(1)
                 }
             }
             // 选中两个孩子分支的情况
-            for (int j = i + 1; j < set.size(); j++) {
-                for (int path1 : set.get(i)) {
-                    for (int path2 : set.get(j)) {
-                        if (path1 + path2 + d <= m) {
-                            res.add(path1 + path2 + d);
+            for (int j = i + 1; j < list.size(); j++) {
+                for (int path1 : list.get(i)) {         // path1 : [0,1]
+                    for (int path2 : list.get(j)) {     // path2 : [0,2]
+                        if (path1 + path2 + d <= m) {   // 1+2+0
+                            res.add(path1 + path2 + d); // res.add(3)
                         }
                     }
                 }
