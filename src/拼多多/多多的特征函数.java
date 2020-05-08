@@ -1,5 +1,9 @@
 package 拼多多;
 
+/*
+
+ */
+
 import java.util.Scanner;
 
 public class 多多的特征函数 {
