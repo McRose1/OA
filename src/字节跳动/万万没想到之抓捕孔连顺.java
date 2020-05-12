@@ -35,7 +35,9 @@ package 字节跳动;
  */
 
 import java.util.Scanner;
-
+/*  Sliding Window
+    滑动窗口，先移动右边，当不满足的时候再移动左边
+ */
 public class 万万没想到之抓捕孔连顺 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -45,6 +47,30 @@ public class 万万没想到之抓捕孔连顺 {
         for (int i = 0; i < N; i++) {
             buildings[i] = sc.nextInt();
         }
-
+        if (N <= 2) {
+            System.out.println(-1);
+            return;
+        }
+        long count = 0;
+        // 用双指针维护滑动窗口的首尾
+        int left = 0;
+        int right = 2;
+        while (right < N) {
+            // 窗口大小超过 D，将窗口首部的指针右移一位
+            if (buildings[right] - buildings[left] > D) {
+                left++;
+            } else if (right - left < 2) {
+                // 窗口缩小到不能容纳 3 个特工，应该扩大窗口
+                right++;
+            } else {
+                // 窗口满足条件，在该窗口内计算所有可能性的个数
+                long n = right - left;
+                // 相当于是固定末尾，计算末尾之前的位置放 2 个特工的所有可能性，所以是C(n2)
+                count += n * (n - 1) / 2;
+                right++;
+            }
+        }
+        count %= 99997867;
+        System.out.println(count);
     }
 }
