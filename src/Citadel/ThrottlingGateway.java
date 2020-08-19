@@ -1,7 +1,8 @@
 package Citadel;
 
 /*  Throttling Gateway
-    Non-critical requests for a transaction system are routed through a throttling gateway to ensure that the network is not choked by non-essential requests.
+    Non-critical requests for a transaction system are routed through a throttling gateway
+    to ensure that the network is not choked by non-essential requests.
 
     The gateway has the following limits:
         o The number of transaction in any given second cannot exceed 3.
@@ -41,7 +42,7 @@ public class ThrottlingGateway {
         int[] resquestTime1 = new int[] {1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7, 7, 7, 11, 11, 11, 11};
         int[] resquestTime2 = new int[] {1, 1, 1, 1, 2};
         int[] resquestTime3 = new int[] {1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 7};
-        int res = droppedRequests(resquestTime3);
+        int res = droppedRequests(resquestTime2);
         System.out.println(res);
     }
 
@@ -54,40 +55,48 @@ public class ThrottlingGateway {
             return 0;
         }
 
-        int drop = 0;
+        int res = 0;
+
         HashMap<Integer, Integer> map = new HashMap<>();
-        int lastReqTime = 0;
-        for (int i : requestTime) {
-            map.put(i, map.getOrDefault(i, 0) + 1);
-            lastReqTime = Math.max(lastReqTime, i);
+        int last = 0;
+        for (int req : requestTime) {
+            map.put(req, map.getOrDefault(req, 0) + 1);
+            last = Math.max(last, req);
         }
-        int[] nums = new int[lastReqTime + 1];
-        for (int i = 1; i < nums.length; i++) {
-            int numReqThisSecond = map.getOrDefault(i, 0);
-            nums[i] = nums[i - 1] + numReqThisSecond;
-            if (numReqThisSecond == 0) {
+
+        int[] sum = new int[last + 1];
+        for (int i = 1; i < sum.length; i++) {
+            int cur = map.getOrDefault(i, 0);
+            sum[i] = sum[i - 1] + cur;
+            if (cur == 0) {
                 continue;
             }
+
             int toDrop = 0;
-            if (numReqThisSecond > MAX_PER_SECOND) {
-                toDrop = Math.max(toDrop, numReqThisSecond - MAX_PER_SECOND);
+
+            // 1 second
+            if (cur > MAX_PER_SECOND) {
+                toDrop = cur - MAX_PER_SECOND;
             }
 
-            int timeTenSecondsAgo = Math.max(i - 10, 0);
-            int numReqPastTenSecond = nums[i] - nums[timeTenSecondsAgo];
-            if (numReqPastTenSecond > MAX_TEN_SECONDS) {
-                int numReqExceed = Math.min(numReqThisSecond, numReqPastTenSecond - MAX_TEN_SECONDS);
-                toDrop = Math.max(toDrop, numReqExceed);
+            // 10 seconds
+            int startTen = Math.max(i - 10, 0);
+            int tens = sum[i] - sum[startTen];
+            if (tens > MAX_TEN_SECONDS) {
+                int exceedTen = Math.min(cur, tens - MAX_TEN_SECONDS);
+                toDrop = Math.max(toDrop, exceedTen);
             }
 
-            int timeOneMintueAgo = Math.max(i - 60, 0);
-            int numReqPastMinute = nums[i] - nums[timeOneMintueAgo];
-            if (numReqPastMinute > MAX_PER_MINUTE) {
-                int numReqExceeded = Math.min(numReqThisSecond, numReqPastMinute - MAX_PER_MINUTE);
-                toDrop = Math.max(toDrop, numReqExceeded);
+            // 1 minute
+            int startMin = Math.max(i - 60, 0);
+            int minute = sum[i] - sum[startMin];
+            if (minute > MAX_PER_MINUTE) {
+                int exceedMin = Math.min(cur, minute - MAX_PER_MINUTE);
+                toDrop = Math.max(toDrop, exceedMin);
             }
-            drop += toDrop;
+
+            res += toDrop;
         }
-        return drop;
+        return res;
     }
 }
