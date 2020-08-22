@@ -48,10 +48,37 @@ public class 最短字符编码 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        if (s.length() <= 4) {
-            System.out.println(s);
-            return;
-        }
+        System.out.println(helper(s).length());
+    }
+
+    private static String helper(String s) {
+        if(s.length() <= 4) return s;
         int len = s.length();
+        int rptLen = len>>1; // 当前尝试的重复的长度
+        int bestRptTime = 0;
+        int bestCompressLen = len;
+        String seg1 = "", seg2 = "", seg3 = "";
+        while(rptLen >= 1){
+            for(int k = 0; k <= len - (rptLen<<1); k++){ // 从k位置开始寻找，至少留两段
+                int count = 1;
+                String s2 = s.substring(k,k+rptLen);
+                for(int j = 1; k+j*rptLen+rptLen <= len; j++){ // 判断最多重复几次
+                    String s3 = s.substring(k+j*rptLen, k+(j+1)*rptLen);
+                    if(s2.equals(s3)) count++;
+                    else break;
+                }
+                int newLen = len-count*rptLen+3+rptLen;
+                if(newLen < len && newLen < bestCompressLen){ // 新长度合适
+                    bestCompressLen = newLen;
+                    bestRptTime = count;
+                    seg1 = s.substring(0,k);
+                    seg2 = s.substring(k,k+rptLen);
+                    seg3 = s.substring(k+count*rptLen);
+                }
+            }
+            rptLen--;
+        }
+        if(bestRptTime == 0) return s;
+        return helper(seg1)+bestRptTime+"["+helper(seg2)+"]"+helper(seg3);
     }
 }

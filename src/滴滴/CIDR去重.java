@@ -43,5 +43,62 @@ package 滴滴;
     172.24.168.32/32
  */
 
+import java.util.*;
+
 public class CIDR去重 {
+    private static class IpNode implements Comparable<IpNode> {
+        String ip;
+        String mask;
+        @Override
+        public int compareTo(IpNode o) {
+            return ip.compareTo(o.ip);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String[] cidrs = new String[n];
+        for (int i = 0; i < n; i++) {
+            cidrs[i] = sc.next();
+        }
+        List<String> list = solve(cidrs);
+        System.out.println(list.size());
+        for (String string : list) {
+            System.out.println(string);
+        }
+    }
+    private static List<String> solve(String[] cidrs) {
+        HashSet<String> hashSet = new HashSet<>(cidrs.length);
+        IpNode[] ipNodes = new IpNode[cidrs.length];
+        for (int i = 0; i < cidrs.length; i++) {
+            String[] tmps = cidrs[i].split("/");
+            String[] ips = tmps[0].split("\\.");
+            int ip = 0;
+            for (int j = 0; j < ips.length; j++) {
+                ip <<= 8;
+                ip ^= Integer.parseInt(ips[j]);
+            }
+            ipNodes[i] = new IpNode();
+            ipNodes[i].ip = Integer.toBinaryString(ip).substring(0, Integer.parseInt(tmps[1]));
+            ipNodes[i].mask = cidrs[i];
+        }
+        Arrays.sort(ipNodes);
+        for (int i = 0; i < ipNodes.length; i++) {
+            hashSet.add(ipNodes[i].mask);
+            for (int j = i + 1, index = i; j < ipNodes.length; j++) {
+                if (ipNodes[j].ip.startsWith(ipNodes[index].ip)) {
+                    i++;
+                } else {
+                    break;
+                }
+            }
+        }
+        List<String> list = new ArrayList<>();
+        for (String cidr : cidrs) {
+            if (hashSet.contains(cidr)) {
+                list.add(cidr);
+            }
+        }
+        return list;
+    }
 }
