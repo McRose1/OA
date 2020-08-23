@@ -20,27 +20,44 @@ package 滴滴;
     524 544
  */
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class 熟悉的AplusB {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        if (n % 2 == 1) {
+
+        int count = 0;
+        List<int[]> res = new ArrayList<>();
+
+        for (int a = 1 ; a <= 9; a++) {
+            for (int b = 0 ; b <= 9; b++) {
+                if (b == a) continue;
+                for (int c = 0 ; c <= 9; c++) {
+                    if (c == a || c == b) continue;
+                    int num1 = a * 100 + b * 10 + c;
+                    int num2 = a * 100 + c * 10 + c;
+                    if (num1 + num2 == n) {
+                        count++;
+                        res.add(new int[] {num1, num2});
+                    }
+                }
+            }
+        }
+        if (count == 0) {
             System.out.print(0);
             return;
         }
-        int half = n / 2;
-        int a = half / 100;
-        int rem = half % 100;
-        int c = half % 10;
-        if (a == c) {
-            System.out.print(0);
-            return;
+        System.out.println(count);
+        for (int i = 0; i < count; i++) {
+            int[] cur = res.get(i);
+            if (i == count - 1) {
+                System.out.print(cur[0] + " " + cur[1]);
+            } else {
+                System.out.println(cur[0] + " " + cur[1]);
+            }
         }
-        int second = a * 100 + c * 10 + c;
-        int target = n - second;
-        System.out.println(1);
-        System.out.print(target + " " + second);
     }
 }

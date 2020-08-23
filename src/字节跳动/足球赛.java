@@ -34,24 +34,27 @@ public class 足球赛 {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
-            int n = sc.nextInt();
-            int k = sc.nextInt();
-            int d1 = sc.nextInt();
-            int d2 = sc.nextInt();
-            if (n - k == 0) {
-                if (d1 == 0 && d2 == 0) {
-                    System.out.println("yes");
-                } else {
-                    System.out.println("no");
-                }
-            } else {
-                int remain = n - k;
-                if (remain >= d1 + d2) {
-                    System.out.println("yes");
-                } else {
-                    System.out.println("no");
-                }
-            }
+            long n = sc.nextLong();
+            long k = sc.nextLong();
+            long d1 = sc.nextLong();
+            long d2 = sc.nextLong();
+
+            boolean target = game(n, k, d1, d2) || game(n, k, -d1, d2) || game(n, k, d1, -d2) || game(n, k, -d1, -d2);
+
+            System.out.println(target ? "yes" : "no");
+        }
+    }
+
+    public static boolean game(long n, long k, long d1, long d2) {
+        long temp1 = 2 * d1 + d2;
+        long temp2 = n - k;
+        if (k >= temp1 && (k - temp1) % 3 == 0) {
+            return (temp1 + temp2) >= 0 && (temp1 + temp2) % 3 == 0 &&
+                    (k - temp1) / 3 <= n / 3 &&
+                    (k - temp1) / 3 + d1 <= n / 3 &&
+                    (k - temp1) / 3 + d1 + d2 <= n / 3;
+        } else {
+            return false;
         }
     }
 }

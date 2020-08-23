@@ -20,11 +20,35 @@ package 字节跳动;
     例子说明：把第一个 'b' 或者第二个 'b' 置成 'a'，可得到长度为 5 的全 'a' 子串。
  */
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class 字符替换 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        String s = sc.next();
+        System.out.print(Math.max(change(n, m, s, 'a'), change(n, m, s, 'b')));
+    }
+
+    private static int change(int n, int m, String s, char target) {
+        int max = 0;
+        List<Integer> sums = new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            if (s.charAt(i) == target) {
+                sums.add(i);
+            }
+        }
+        if (sums.size() <= m) {
+            return n;
+        }
+        sums.add(s.length());
+        max = sums.get(m);
+        for (int i = m + 1; i < sums.size(); i++) {
+            max = Math.max(max, sums.get(i) - sums.get(i - m - 1) - 1);
+        }
+        return max;
     }
 }
