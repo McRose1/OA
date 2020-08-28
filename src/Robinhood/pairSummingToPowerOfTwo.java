@@ -23,7 +23,6 @@ package Robinhood;
 
  */
 
-import java.util.HashMap;
 import java.util.Scanner;
 
 public class pairSummingToPowerOfTwo {
@@ -35,30 +34,19 @@ public class pairSummingToPowerOfTwo {
             arr[i] = sc.nextInt();
         }
 
-        HashMap<Integer, Integer> count = new HashMap<>();
-        for (int num : arr) {
-            count.put(num, count.getOrDefault(num, 0) + 1);
-        }
+        int len = arr.length;
+        int count = 0;
 
-        HashMap<Integer, Integer> powers2 = new HashMap<>();
-
-        long res = 0;
-        for (int num : arr) {
-            int y = nextPower2(num) - num;
-
-            if (y == 0) {
-                powers2.put(num, powers2.getOrDefault(num, 0) + 1);
-            }
-            if (count.containsKey(y)) {
-                res += count.get(y);
+        for (int i = 0; i < len; i++) {
+            for (int j = i; j < len; j++) {
+                int sum = arr[i] + arr[j];
+                if (sum < 1) continue;
+                if (sum % nextPower2(sum) == 0) {
+                    count++;
+                }
             }
         }
-
-        for (int key : powers2.keySet()) {
-            int val = powers2.get(key);
-            res += (val * (val + 1)) / 2;
-        }
-        System.out.print(res);
+        System.out.print(count);
     }
 
     private static int nextPower2(int n) {
