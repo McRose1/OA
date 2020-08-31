@@ -1,7 +1,8 @@
 package 疯狂游戏;
 
-/*  戳气球
-
+/*  戳气球 (LC 312)
+    Input: [3,1,5,8]
+    Output: 167
  */
 
 import java.util.Scanner;
@@ -12,60 +13,30 @@ public class 戳气球 {
         String input = sc.nextLine();
         String[] in = input.split(",");
         int n = in.length;
-        if (n == 0) {
-            System.out.print(0);
-            return;
-        } else if (n == 1) {
-            int res = Integer.parseInt(in[0]);
-            System.out.print(res);
-            return;
-        } else if (n == 2) {
-            int num = Math.max(Integer.parseInt(in[0]), Integer.parseInt(in[1]));
-            int res = num + (Integer.parseInt(in[0]) * Integer.parseInt(in[1]));
-            System.out.print(res);
-            return;
-        }
-        StringBuilder sb = new StringBuilder();
-        for (String s : in) {
-            sb.append(s);
-        }
-        String s = sb.toString();
-        int max = 0;
+        int[] nums = new int[n];
         for (int i = 0; i < n; i++) {
-            int local = 0;
-            if (i == 0 && i + 1 < n) {
-                local += (s.charAt(0) - '0') * (s.charAt(1) - '0');
-            } else if (i == n - 1 && i - 1 >= 0) {
-                local += (s.charAt(n - 1) - '0') * (s.charAt(n - 2) - '0');
-            } else {
-                // 3 + (158)
-                local += (s.charAt(i - 1) - '0') * (s.charAt(i) - '0') * (s.charAt(i + 1) - '0');
-            }
-            local += helper(s.substring(0, i) + s.substring(i + 1));
-            max = Math.max(max, local);
+            nums[i] = Integer.parseInt(in[i]);
         }
-        System.out.print(max);
-    }
+        int[] arr = new int[n + 2];
+        System.arraycopy(nums, 0, arr, 1, n);
+        arr[0] = arr[n + 1] = 1;
 
-    private static int helper(String s) {
-        if (s.length() == 1) {
-            return s.charAt(0) - '0';
-        }
-        int n = s.length();
-        int max = 0;
-        for (int i = 0; i < n; i++) {
-            int local = 0;
-            if (i == 0) {
-                local += (s.charAt(0) - '0') * (s.charAt(1) - '0');
-            } else if (i == n - 1) {
-                local += (s.charAt(n - 1) - '0') * (s.charAt(n - 2) - '0');
-            } else {
-                // 3 + (158)
-                local += (s.charAt(i - 1) - '0') * (s.charAt(i) - '0') * (s.charAt(i + 1) - '0');
+        int[][] dp = new int[n + 2][n + 2];
+
+        // 从最小的子问题开始算：[1,3,1] [3,1,5] [1,5,8] [5,8,1] -> [1,3,1,5] [3,1,5,8] [1,5,8,1] ...
+        for (int len = 2; len < n + 2; len++) {
+            // 左边界
+            for (int i = 0; i < n + 2 - len; i++) {
+                // 右边界
+                int j = i + len;
+                // 在这个边界内遍历每一种可能（就是戳气球的过程）
+                for (int k = i + 1; k < j; k++) {
+                    int sum = arr[i] * arr[k] * arr[j];
+                    sum += (dp[i][k] + dp[k][j]);
+                    dp[i][j] = Math.max(dp[i][j], sum);
+                }
             }
-            local += helper(s.substring(0, i) + s.substring(i + 1));
-            max = Math.max(max, local);
         }
-        return max;
+        System.out.print(dp[0][n + 1]);
     }
 }
