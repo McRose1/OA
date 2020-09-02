@@ -35,6 +35,8 @@ package AkunaCapital;
         o 1 <= space[i] <= 10^9
  */
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
 
 public class DiskSpaceAnalysis {
@@ -45,5 +47,22 @@ public class DiskSpaceAnalysis {
         for (int i = 0; i < n; i++) {
             space[i] = sc.nextInt();
         }
+        int x = sc.nextInt();
+
+        Deque<Integer> deq = new ArrayDeque<>();
+        int maxMin = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            while (!deq.isEmpty() && space[deq.peekLast()] > space[i]) {
+                deq.pollLast();
+            }
+            if (!deq.isEmpty() && deq.peekFirst() <= (i - x)) {
+                deq.pollFirst();
+            }
+            deq.offerLast(i);
+            if (i >= x - 1) {
+                maxMin = Math.max(maxMin, space[deq.peekFirst()]);
+            }
+        }
+        System.out.print(maxMin);
     }
 }

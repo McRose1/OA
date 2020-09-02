@@ -1,6 +1,6 @@
 package AkunaCapital;
 
-/*  DivisibilityOfStrings
+/*  Divisibility Of Strings
     As an assignment, a student is given two strings s and t. Create a function that performs per the following rules.
     1. Find whether strings s is divisible by string t. A string s divisible by string t if string t can be concatenated some number of times to obtain the string s.
         o If s is divisible, find the smallest string u such that it can be concatenated some number of times to obtain both s and t.
@@ -66,28 +66,37 @@ public class DivisibilityOfStrings {
             System.out.print(-1);
             return;
         }
-        // bcdbcd - bca
-        for (int i = 0; i < sLen; i++) {
-            if (s.charAt(i) != t.charAt(i % tLen)) {
-                System.out.println(-1);
-                return;
-            }
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i * tLen < sLen; i++) {
+            sb.append(t);
         }
 
-        for (int i = 0; i < tLen; i++) {
-            int j = 0;
-            int cycle = i + 1;
-            for ( ; j < tLen; j++) {
-                // bcd bcd
-                if (t.charAt(j) != t.charAt(j % cycle)) {
-                    break;
-                }
+        if (!sb.toString().equals(s)) {
+            System.out.println(-1);
+            return;
+        }
+
+        int divisible = 1;
+
+        for (int i = 1; i <= tLen; i++) {
+
+            //optimized solution for skipping a few unrequired iterations
+            if (tLen % divisible++ != 0) {
+                continue;
             }
-            if (j == tLen) {
-                System.out.print(cycle);
+
+            sb = new StringBuilder();
+            String subStr = t.substring(0, i);
+            while (sb.length() < tLen) {
+                //	System.out.println(a++);
+                sb.append(subStr);
+            }
+            if (sb.toString().equals(t)) {
+                System.out.println(i);
                 return;
             }
         }
-        System.out.print(-1);
+        System.out.println(-1);
     }
 }
