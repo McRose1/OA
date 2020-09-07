@@ -7,9 +7,12 @@ package 华为;
     书柜	图书
     书桌	台灯，文具
     工作椅	无
-    如果要买归类为附件的物品，必须先买该附件所属的主件。每个主件可以有 0 个、 1 个或 2 个附件。附件不再有从属于自己的附件。王强想买的东西很多，为了不超出预算，他把每件物品规定了一个重要度，分为 5 等：用整数 1 ~ 5 表示，第 5 等最重要。他还从因特网上查到了每件物品的价格（都是 10 元的整数倍）。他希望在不超过 N 元（可以等于 N 元）的前提下，使每件物品的价格与重要度的乘积的总和最大。
-        设第 j 件物品的价格为 v[j] ，重要度为 w[j] ，共选中了 k 件物品，编号依次为 j 1 ， j 2 ，……， j k ，则所求的总和为：
-    v[j 1 ]*w[j 1 ]+v[j 2 ]*w[j 2 ]+ … +v[j k ]*w[j k ] 。（其中 * 为乘号）
+    如果要买归类为附件的物品，必须先买该附件所属的主件。每个主件可以有 0 个、 1 个或 2 个附件。附件不再有从属于自己的附件。
+    王强想买的东西很多，为了不超出预算，他把每件物品规定了一个重要度，分为 5 等：用整数 1 ~ 5 表示，第 5 等最重要。
+    他还从因特网上查到了每件物品的价格（都是 10 元的整数倍）。他希望在不超过 N 元（可以等于 N 元）的前提下，使每件物品的价格与重要度的乘积的总和最大。
+
+        设第 j 件物品的价格为 v[j] ，重要度为 w[j] ，共选中了 k 件物品，编号依次为 j1 ， j2 ，……， jk ，则所求的总和为：
+    v[j1] * w[j1] + v[j2] * w[j2]+ … + v[jk] * w[jk] 。（其中 * 为乘号）
         请你帮助王强设计一个满足要求的购物单。
 
     输入描述:
@@ -19,7 +22,9 @@ package 华为;
 
     从第 2 行到第 m+1 行，第 j 行给出了编号为 j-1 的物品的基本数据，每行有 3 个非负整数 v p q
 
-    （其中 v 表示该物品的价格（ v<10000 ）， p 表示该物品的重要度（ 1 ~ 5 ）， q 表示该物品是主件还是附件。如果 q=0 ，表示该物品为主件，如果 q>0 ，表示该物品为附件， q 是所属主件的编号）
+    （其中 v 表示该物品的价格（ v<10000 ）， p 表示该物品的重要度（ 1 ~ 5 ），
+
+    q 表示该物品是主件还是附件。如果 q=0 ，表示该物品为主件，如果 q>0 ，表示该物品为附件， q 是所属主件的编号）
 
     输出描述:
      输出文件只有一个正整数，为不超过总钱数的物品的价格与重要度乘积的总和的最大值（ <200000 ）。
@@ -41,6 +46,100 @@ import java.util.Scanner;
 public class 购物单 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int m = sc.nextInt();
 
+        // 分组，goods[i][0]为主件，goods[i][1]为附件1，goods[i][2]为附件2
+        Item[][] itemList = new Item[60][4];
+
+        for (int i = 1; i <= m; i++) {
+            int v = sc.nextInt();
+            int p = sc.nextInt();
+            int q = sc.nextInt();
+
+            Item it = new Item(v, v * p);
+
+            if (q == 0) {
+                itemList[i][0] = it;
+            } else {
+                if (itemList[q][1] == null) {
+                    itemList[q][1] = it;
+                } else {
+                    itemList[q][2] = it;
+                }
+            }
+        }
+
+        int[] dp = new int[N + 1];
+        // 从分组中选择价值最大的，共 5 种情况
+        // 1. 不选主件；2. 选主件；3. 选主件和附件1；4. 选主件和附件2；5. 选主件和附件1、2
+        for (int i = 1; i <= m; i++) {
+            for (int j = N; j >= 0 && itemList[i][0] != null; j--) {
+                Item primary = itemList[i][0];
+                int max = dp[j];
+                if (j >= primary.price && max < dp[j - primary.price] + primary.vp) {
+                    max = dp[j - primary.price] + primary.vp;
+                }
+                int vt;
+                if (itemList[i][1] != null) {
+                    vt = primary.price + itemList[i][1].price;
+                    if (j >= vt && max < dp[j - vt] + primary.vp + itemList[i][1].vp) {
+                        max = dp[j - vt] + primary.vp + itemList[i][1].vp;
+                    }
+                }
+                if (itemList[i][2] != null) {
+                    vt = primary.price + itemList[i][1].price + itemList[i][2].price;
+                    if (j >= vt && max < dp[j - vt] + primary.vp + itemList[i][1].vp + itemList[i][2].vp) {
+                        max = dp[j - vt] + primary.vp + itemList[i][1].vp + itemList[i][2].vp;
+                    }
+                }
+                dp[j] = max;
+            }
+        }
+        System.out.print(dp[N]);
+    }
+
+    private static class Item {
+        int price;
+        int vp;
+
+        public Item(int price, int vp) {
+            this.price = price;
+            this.vp = vp;
+        }
     }
 }
+
+/*  Greedy (20%)
+
+        List<int[]> list = new ArrayList<>();
+        for (int i = 0; i < m; i++) {
+            int[] temp = new int[4];
+            temp[0] = sc.nextInt();
+            temp[1] = sc.nextInt();
+            temp[2] = sc.nextInt();
+            temp[3] = i;
+            list.add(temp);
+        }
+        list.sort((a, b) -> b[1] - a[1]);
+        boolean[] bought = new boolean[m + 1];
+
+        int sum = 0;
+        for (int[] item : list) {
+            if (item[2] == 0) {
+                if (N >= item[0]) {
+                    sum += (item[0] * item[1]);
+                    N -= item[0];
+                    bought[item[3]] = true;
+                }
+            } else {
+                if (bought[item[2]]) {
+                    if (N >= item[0]) {
+                        sum += (item[0] * item[1]);
+                        N -= item[0];
+                    }
+                }
+            }
+        }
+        System.out.print(sum);
+ */
