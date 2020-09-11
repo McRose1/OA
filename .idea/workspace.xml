@@ -2,23 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30a4a878-c013-4fd2-a038-5b46c5e1cdcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/华为/删除字符串中出现次数最少的字符.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/华为/合唱队.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/华为/字符串排序.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/华为/密码验证合格程序.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/华为/数据分类处理.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/华为/简单密码破解.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/华为/简单错误记录.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/华为/识别有效的IP地址和掩码并进行分类统计.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/小米/句子反转.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/小米/小米Git.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/小米/懂二进制.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/小米/树的高度.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/小米/电话号码分身.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/小米/进制间转换.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/小米/风口的猪_中国牛市.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/中兴/汇集.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/中兴/牛牛的完全二叉树.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/华为/字符串加解密.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/华为/查找兄弟单词.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/华为/素数伴侣.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/天翼云/不相邻的最大和.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/天翼云/求abcd的值.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/天翼云/输出第N个丑数.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/深信服/出栈顺序.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/深信服/单链表排序.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/深信服/围棋遍历.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OA/华为/坐标移动.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/华为/坐标移动.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/华为/字符串排序$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/华为/字符串排序$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OA/华为/字符串排序.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OA/华为/字符串排序.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +53,22 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.字符串排序">
-    <configuration name="删除字符串中出现次数最少的字符" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.删除字符串中出现次数最少的字符" />
+  <component name="RunManager" selected="Application.字符串加解密">
+    <configuration name="出栈顺序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="深信服.出栈顺序" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="深信服.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="查找兄弟单词" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.查找兄弟单词" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -70,8 +80,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="数据分类处理" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.数据分类处理" />
+    <configuration name="素数伴侣" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.素数伴侣" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="字符串排序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.字符串排序" />
+    <configuration name="字符串加解密" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.字符串加解密" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -96,324 +106,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="识别有效的IP地址和掩码并进行分类统计" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.识别有效的IP地址和掩码并进行分类统计" />
+    <configuration name="输出第N个丑数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="天翼云.输出第N个丑数" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="华为.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="坐标移动" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.坐标移动" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="华为.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="石头碰撞" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="快手.石头碰撞" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="快手.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="代金券组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.代金券组合" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="压缩字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="百词斩.压缩字符串" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="百词斩.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="找零" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="字节跳动.找零" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="字节跳动.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="电话号码分身" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="小米.电话号码分身" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="小米.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="相似" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.相似" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="岛屿数量" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="疯狂游戏.岛屿数量" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="疯狂游戏.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="字符的连接最长路径查找" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.字符的连接最长路径查找" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="华为.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="第一题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="四三九九.第一题" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="四三九九.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="简单错误记录" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.简单错误记录" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="华为.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="戳气球" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="疯狂游戏.戳气球" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="疯狂游戏.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="回合制游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="拼多多.回合制游戏" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="拼多多.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="删除排序数组中的重复项" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="浩鲸科技.删除排序数组中的重复项" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="浩鲸科技.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="提取优惠券码" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="携程.提取优惠券码" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="携程.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="迷宫寻路" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="美团.迷宫寻路" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="美团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="运算问题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="阿里巴巴.运算问题" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="阿里巴巴.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="句子反转" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="小米.句子反转" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="小米.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="找下一个水仙花数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="欢聚集团.找下一个水仙花数" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="欢聚集团.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="点菜问题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="便利蜂.点菜问题" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="便利蜂.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="整数去重" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="浩鲸科技.整数去重" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="浩鲸科技.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="密码验证合格程序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="华为.密码验证合格程序" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="华为.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="迷宫寻路" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="拼多多.迷宫寻路" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="拼多多.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="足球赛" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="字节跳动.足球赛" />
-      <module name="OA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="字节跳动.*" />
+          <option name="PATTERN" value="天翼云.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -447,6 +145,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="字符串排序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.字符串排序" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="华为.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="明明的随机数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="华为.明明的随机数" />
       <module name="OA" />
@@ -466,6 +177,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="招商银行.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="删除排序数组中的重复项" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="浩鲸科技.删除排序数组中的重复项" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="浩鲸科技.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -505,6 +229,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="农行研发中心.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="相似" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.相似" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="围棋遍历" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="深信服.围棋遍历" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="深信服.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -577,6 +327,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="坐标移动" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.坐标移动" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="华为.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="提取优惠券码" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="携程.提取优惠券码" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="携程.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="排队唱歌" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="招商银行.排队唱歌" />
       <module name="OA" />
@@ -616,12 +392,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="单链表排序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="深信服.单链表排序" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="深信服.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="汽水瓶" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="华为.汽水瓶" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="华为.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="岛屿数量" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="疯狂游戏.岛屿数量" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="疯狂游戏.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -694,12 +496,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="迷宫寻路" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.迷宫寻路" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="简单的文本编辑器" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="字节跳动.简单的文本编辑器" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="字节跳动.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="石头碰撞" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="快手.石头碰撞" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="快手.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="汇集" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="中兴.汇集" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="中兴.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -739,6 +580,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="米哈游.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="字符的连接最长路径查找" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.字符的连接最长路径查找" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="华为.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -798,12 +652,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="数据分类处理" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.数据分类处理" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="华为.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="月份天数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="美团.月份天数" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="整数去重" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="浩鲸科技.整数去重" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="浩鲸科技.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -837,6 +717,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="代金券组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="美团.代金券组合" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="美团.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="合并金币" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="美团.合并金币" />
       <module name="OA" />
@@ -856,6 +749,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="米哈游.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="第一题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="四三九九.第一题" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="四三九九.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -895,6 +801,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="滴滴.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="运算问题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="阿里巴巴.运算问题" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="阿里巴巴.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="密码验证合格程序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.密码验证合格程序" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="华为.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -967,8 +899,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="压缩字符串" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="百词斩.压缩字符串" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="百词斩.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="句子逆序" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="华为.句子逆序" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="华为.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="简单错误记录" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="华为.简单错误记录" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
@@ -999,6 +957,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="字节跳动.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="不相邻的最大和" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="天翼云.不相邻的最大和" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="天翼云.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="句子反转" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="小米.句子反转" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="小米.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1097,12 +1081,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="找零" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="字节跳动.找零" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="字节跳动.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="戳气球" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="疯狂游戏.戳气球" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="疯狂游戏.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="迷宫寻路" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="拼多多.迷宫寻路" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="拼多多.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="坐标移动" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="华为.坐标移动" />
       <module name="OA" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="华为.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="找下一个水仙花数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="欢聚集团.找下一个水仙花数" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="欢聚集团.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1149,6 +1185,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="电话号码分身" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="小米.电话号码分身" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="小米.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="回合制游戏" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="拼多多.回合制游戏" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="拼多多.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="点菜问题" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="便利蜂.点菜问题" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="便利蜂.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="足球赛" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="字节跳动.足球赛" />
+      <module name="OA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="字节跳动.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -1162,10 +1250,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.字符串排序" />
-        <item itemvalue="Application.数据分类处理" />
-        <item itemvalue="Application.删除字符串中出现次数最少的字符" />
-        <item itemvalue="Application.识别有效的IP地址和掩码并进行分类统计" />
+        <item itemvalue="Application.字符串加解密" />
+        <item itemvalue="Application.素数伴侣" />
+        <item itemvalue="Application.查找兄弟单词" />
+        <item itemvalue="Application.出栈顺序" />
+        <item itemvalue="Application.输出第N个丑数" />
       </list>
     </recent_temporary>
   </component>
@@ -1295,6 +1384,10 @@
       <workItem from="1599481706726" duration="8391000" />
       <workItem from="1599586248710" duration="9548000" />
       <workItem from="1599615090891" duration="3443000" />
+      <workItem from="1599656759844" duration="2770000" />
+      <workItem from="1599690922025" duration="1062000" />
+      <workItem from="1599696743532" duration="6886000" />
+      <workItem from="1599787105029" duration="4754000" />
     </task>
     <servers />
   </component>
@@ -1314,47 +1407,47 @@
       <screen x="153" y="800" width="1024" height="768" />
     </state>
     <state x="478" y="897" key="#com.intellij.ide.util.MemberChooser/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1598063651902" />
-    <state width="982" height="190" key="GridCell.Tab.0.bottom" timestamp="1599619316652">
-      <screen x="153" y="800" width="1024" height="768" />
+    <state width="1238" height="187" key="GridCell.Tab.0.bottom" timestamp="1599793118943">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1598070122625" />
-    <state width="1238" height="190" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1599451289184" />
+    <state width="1238" height="198" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1599700138905" />
     <state width="982" height="179" key="GridCell.Tab.0.bottom/0.23.1280.697@0.23.1280.697" timestamp="1598051235831" />
-    <state width="1238" height="156" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1599604909656" />
-    <state width="982" height="190" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599619316652" />
+    <state width="1238" height="187" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1599793118943" />
+    <state width="982" height="187" key="GridCell.Tab.0.bottom/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599793059759" />
     <state width="1238" height="124" key="GridCell.Tab.0.bottom/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1598934969767" />
     <state width="982" height="127" key="GridCell.Tab.0.bottom/153.800.1024.768/0.23.1280.777@153.800.1024.768" timestamp="1598923233871" />
     <state width="982" height="190" key="GridCell.Tab.0.bottom/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1599450564172" />
-    <state width="982" height="190" key="GridCell.Tab.0.center" timestamp="1599619316651">
-      <screen x="153" y="800" width="1024" height="768" />
+    <state width="1238" height="187" key="GridCell.Tab.0.center" timestamp="1599793118942">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1598070122625" />
-    <state width="1238" height="190" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1599451289182" />
+    <state width="1238" height="198" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1599700138904" />
     <state width="982" height="179" key="GridCell.Tab.0.center/0.23.1280.697@0.23.1280.697" timestamp="1598051235830" />
-    <state width="1238" height="156" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1599604909656" />
-    <state width="982" height="190" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599619316651" />
+    <state width="1238" height="187" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1599793118942" />
+    <state width="982" height="187" key="GridCell.Tab.0.center/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599793059757" />
     <state width="1238" height="124" key="GridCell.Tab.0.center/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1598934969766" />
     <state width="982" height="127" key="GridCell.Tab.0.center/153.800.1024.768/0.23.1280.777@153.800.1024.768" timestamp="1598923233868" />
     <state width="982" height="190" key="GridCell.Tab.0.center/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1599450564171" />
-    <state width="982" height="190" key="GridCell.Tab.0.left" timestamp="1599619316650">
-      <screen x="153" y="800" width="1024" height="768" />
+    <state width="1238" height="187" key="GridCell.Tab.0.left" timestamp="1599793118941">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1598070122624" />
-    <state width="1238" height="190" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1599451289181" />
+    <state width="1238" height="198" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1599700138903" />
     <state width="982" height="179" key="GridCell.Tab.0.left/0.23.1280.697@0.23.1280.697" timestamp="1598051235830" />
-    <state width="1238" height="156" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1599604909656" />
-    <state width="982" height="190" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599619316650" />
+    <state width="1238" height="187" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1599793118941" />
+    <state width="982" height="187" key="GridCell.Tab.0.left/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599793059756" />
     <state width="1238" height="124" key="GridCell.Tab.0.left/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1598934969765" />
     <state width="982" height="127" key="GridCell.Tab.0.left/153.800.1024.768/0.23.1280.777@153.800.1024.768" timestamp="1598923233867" />
     <state width="982" height="190" key="GridCell.Tab.0.left/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1599450564170" />
-    <state width="982" height="190" key="GridCell.Tab.0.right" timestamp="1599619316651">
-      <screen x="153" y="800" width="1024" height="768" />
+    <state width="1238" height="187" key="GridCell.Tab.0.right" timestamp="1599793118942">
+      <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="1238" height="203" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1598070122625" />
-    <state width="1238" height="190" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1599451289183" />
+    <state width="1238" height="198" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1599700138904" />
     <state width="982" height="179" key="GridCell.Tab.0.right/0.23.1280.697@0.23.1280.697" timestamp="1598051235830" />
-    <state width="1238" height="156" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1599604909656" />
-    <state width="982" height="190" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599619316651" />
+    <state width="1238" height="187" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1599793118942" />
+    <state width="982" height="187" key="GridCell.Tab.0.right/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599793059758" />
     <state width="1238" height="124" key="GridCell.Tab.0.right/153.800.1024.768/0.23.1280.777@0.23.1280.777" timestamp="1598934969767" />
     <state width="982" height="127" key="GridCell.Tab.0.right/153.800.1024.768/0.23.1280.777@153.800.1024.768" timestamp="1598923233870" />
     <state width="982" height="190" key="GridCell.Tab.0.right/153.823.1024.745/0.23.1280.777@153.823.1024.745" timestamp="1599450564171" />
@@ -1391,6 +1484,10 @@
     </state>
     <state x="378" y="167" key="extract.method.dialog/0.23.1280.777@0.23.1280.777" timestamp="1598562953273" />
     <state x="455" y="942" key="extract.method.dialog/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599449510422" />
+    <state x="363" y="816" width="604" height="735" key="find.popup" timestamp="1599787131135">
+      <screen x="153" y="800" width="1024" height="768" />
+    </state>
+    <state x="363" y="816" width="604" height="735" key="find.popup/153.800.1024.768/0.0.1280.800@153.800.1024.768" timestamp="1599787131135" />
     <state x="305" y="186" key="run.anything.popup" timestamp="1599004879810">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
