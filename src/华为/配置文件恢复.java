@@ -49,11 +49,44 @@ package 华为;
     install first
  */
 
-import java.util.Scanner;
+import java.util.*;
 
 public class 配置文件恢复 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Map<String, String> map = new HashMap<>();
+        map.put("reset", "reset what");
+        map.put("reset board", "board fault");
+        map.put("board add", "where to add");
+        map.put("board delete", "no board at all");
+        map.put("reboot backplane", "impossible");
+        map.put("backplane abort", "install first");
+        while (sc.hasNext()) {
+            String s = sc.nextLine();
+            String[] words = s.split(" ");
+            int len = words.length;
+            List<String> list = new ArrayList<>();
 
+            for (String key : map.keySet()) {
+                String[] command = key.split(" ");
+                if (command.length == len) {
+                    boolean match = true;
+                    for (int i = 0; i < len; i++) {
+                        if (!command[i].startsWith(words[i])) {
+                            match = false;
+                            break;
+                        }
+                    }
+                    if (match) {
+                        list.add(key);
+                    }
+                }
+            }
+            if (list.size() != 1) {
+                System.out.println("unknown command");
+            } else {
+                System.out.println(map.get(list.get(0)));
+            }
+        }
     }
 }
